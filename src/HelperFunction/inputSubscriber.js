@@ -4,8 +4,11 @@ import { render } from '../index';
 import {root} from '../index';
 
 const onInputChange =async (e) => {
-  let valueStore = window.store.search
   const value =e.target.value.trim()
+  if (value.length === 0) return
+
+  let valueStore = window.store.search
+
   if (valueStore !== value){
     window.store.resetStore()
     root.innerHTML = ''
