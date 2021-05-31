@@ -25,6 +25,6 @@ export const FormSearch = (root) => {
     </nav>
   `;
   root.insertAdjacentHTML('beforebegin', component);
-  inputSubscriber('.form-control')
+  inputSubscriber('.search-form')
 };
 

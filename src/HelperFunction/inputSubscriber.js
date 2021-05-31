@@ -4,7 +4,8 @@ import { render } from '../index';
 import {root} from '../index';
 
 const onInputChange =async (e) => {
-  const value =e.target.value.trim()
+  e.preventDefault()
+  const value = document.querySelector('.form-control').value.trim()
   if (value.length === 0) return
 
   let valueStore = window.store.search
@@ -23,9 +24,6 @@ const onInputChange =async (e) => {
 export const inputSubscriber = (selector) => {
   const inputRef = document.querySelector(selector)
 
-  inputRef.addEventListener(
-    'input',
-    debounce(onInputChange, 500),
-  )
+  inputRef.addEventListener('submit', onInputChange)
 
 }
