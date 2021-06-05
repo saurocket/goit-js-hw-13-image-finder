@@ -16,3 +16,7 @@ export const appLog = (upSelector) => {
 
 
 
+export const scrollDown = (hiddenElement) => {
+  hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+
+}

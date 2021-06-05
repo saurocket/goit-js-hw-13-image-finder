@@ -7,3 +7,4 @@ export const ScrollUp = (root) => {
   root.insertAdjacentHTML('afterend',component)
   appLog('.scroll-up')
 }
+

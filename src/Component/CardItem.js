@@ -3,7 +3,7 @@
 
 
   const Item = `<li class='imageItem' style="width: 24.5%;">
-                        <img src='${webformatURL}' class="card-img-top" alt="card" path=${largeImageURL}>
+                        <img src='${webformatURL}' class="card-img-top" alt="card" path=${largeImageURL} height="180">
                             <div class="card-body">
                                 <ul class="card-items">
                                  <li>
